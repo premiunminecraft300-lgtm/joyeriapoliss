@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyas Paoliss - Elegancia y Estilo</title>
+  <style>
+    /* Estilos generales de la joyería */
+    body {
+      background-color: #faf5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #4a4a4a;
+      text-align: center;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 30px;
+      border-bottom: 2px solid #fce4ec;
+    }
+    h1 {
+      color: #d81b60;
+      font-size: 36px;
+      margin: 0;
+    }
+    h2 {
+      color: #ad1457;
+      margin-top: 35px;
+    }
+    /* Estilo para la caja de música */
+    .caja-audio {
+      margin: 25px auto;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      max-width: 350px;
+      border: 1px solid #fce4ec;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    /* Estilo para la sección de video */
+    .caja-video {
+      margin: 30px auto;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+    .caja-video video {
+      width: 100%;
+      border-radius: 15px;
+      border: 2px solid #fce4ec;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    /* Contenedor de la galería */
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: 0 auto 40px auto;
+    }
+    /* Tarjeta individual de cada joya */
+    .tarjeta-joya {
+      background-color: #ffffff;
+      border: 2px solid #fce4ec;
+      border-radius: 15px;
+      width: 260px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tarjeta-joya:hover {
+      transform: translateY(-5px);
+    }
+    .tarjeta-joya img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .tarjeta-joya h3 {
+      color: #333333;
+      margin: 15px 0 5px;
+      font-size: 20px;
+    }
+    .descripcion {
+      font-size: 14px;
+      color: #777777;
+      margin-bottom: 10px;
+    }
+    .precio {
+      color: #d81b60;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0 15px;
+    }
+    /* Estilo de los botones de WhatsApp */
+    .boton-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background-color 0.2s;
+    }
+    .boton-whatsapp:hover {
+      background-color: #1ebe57;
+    }
+    footer {
+      background-color: #ffffff;
+      padding: 25px 20px;
+      border-top: 2px solid #fce4ec;
+      font-size: 14px;
+      color: #777777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joyas Paoliss</h1>
+    <p>Elegancia y estilo en cada detalle</p>
+  </header>
+
+  <main>
+    <!-- Reproductor de música automático -->
+    <div class="caja-audio">
+      <p style="margin-top: 0; font-size: 14px;">Música de ambiente:</p>
+      <audio id="musicaFondo" controls autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+
+    <!-- Sección de Video automático y en bucle -->
+    <div class="caja-video">
+      <h2>Conoce nuestra nueva colección</h2>
+      <video autoplay loop muted playsinline controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+
+    <h2>Nuestro Catálogo</h2>
+
+    <!-- Galería de productos -->
+    <div class="galeria">
+
+      <!-- Joya 1 -->
+      <div class="tarjeta-joya">
+        <div>
+          <img src="collar.jpg" alt="Collar Corazón">
+          <h3>Collar Corazón</h3>
+          <p class="descripcion">Chapa de oro de 18k con dije brillante.</p>
+        </div>
+        <div>
+          <p class="precio">$13856.65 MXN</p>
+          <a href="https://wa.me" target="_blank" class="boton-whatsapp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Joya 2 -->
+      <div class="tarjeta-joya">
+        <div>
+          <img src="aretes.jpg" alt="Aretes Perla">
+          <h3>Aretes Perla</h3>
+          <p class="descripcion">Perlas cultivadas con broche de plata.</p>
+        </div>
+        <div>
+          <p class="precio">$6542 MXN</p>
+          <a href="https://wa.me" target="_blank" class="boton-whatsapp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Joya 3 -->
+      <div class="tarjeta-joya">
+        <div>
+          <img src="pulsera.jpg" alt="Pulsera Infinito">
+          <h3>Pulsera Infinito</h3>
+          <p class="descripcion">Diseño delicado ajustable en tono negro.</p>
+        </div>
+        <div>
+          <p class="precio">$899.99 MXN</p>
+          <a href="https://wa.me" target="_blank" class="boton-whatsapp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Joya 4 -->
+      <div class="tarjeta-joya">
+        <div>
+          <img src="anillo.jpg" alt="Anillo Solitario">
+          <h3>Anillo Solitario</h3>
+          <p class="descripcion">Acero inoxidable con piedra central.</p>
+        </div>
+        <div>
+          <p class="precio">$5763.56 MXN</p>
+          <a href="https://wa.me" target="_blank" class="boton-whatsapp">Pedir por WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p style="margin-bottom: 15px;">¿Buscas un diseño especial o tienes dudas?</p>
+    <a href="https://wa.me" target="_blank" class="boton-whatsapp" style="margin-bottom: 20px;">Contáctanos por WhatsApp</a>
+    <p>© 2026 Joyas Paoliss - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script para activar la música automáticamente al primer clic o toque -->
+  <script>
+    document.addEventListener('click', function() {
+      var audio = document.getElementById('musicaFondo');
+      if (audio.paused) {
+        audio.play();
+      }
+    }, { once: true });
+  </script>
+
+</body>
+</html>
